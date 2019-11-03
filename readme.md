@@ -2,5 +2,6 @@
 
 This is a simple implementation of conways game of life using rust and ggez. 
 
-Right Mouse Button: Pause and Resume Simulation
-Left Mouse Button: Activate Cell
+##### Input
+* Right Mouse Button: Pause and Resume Simulation
+* Left Mouse Button: Activate Cell
