@@ -44,13 +44,13 @@ impl MainState {
         Ok(state)
     }
 
-    //checks to see if the tile in the active buffer is alive and returns a 1 or a 0
+    //checks to see if the cell in the active buffer is alive and returns a 1 or a 0
     fn is_cell_alive_i32(&self, x: usize, y: usize) -> i32 {
         return if x < MAP_WIDTH && y < MAP_HEIGHT && self.buffers[self.active_buffer][x][y] == 1
          { 1 } else { 0 };
     }
     
-    //checks to see if the tile in the active buffer is alive
+    //checks to see if the cell in the active buffer is alive
     fn is_cell_alive(&self, x: usize, y: usize) -> bool{
         return x < MAP_WIDTH && y < MAP_HEIGHT && self.buffers[self.active_buffer][x][y] == 1;
     }
